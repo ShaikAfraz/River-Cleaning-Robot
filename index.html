@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Autonomous River Cleaning Robot — Project Report</title>
+  <meta name="description" content="Project report for the Autonomous River Cleaning Robot, a 5-member hackathon project.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="hero">
+    <div class="wrap">
+      <p class="kicker">Hackathon project · Team of 5</p>
+      <h1>Autonomous River Cleaning Robot</h1>
+      <p class="lede">A robot that collects floating waste from the surface of a river, so cleanup needs less manual effort and fewer people in unsafe water.</p>
+      <button class="btn" id="print-btn" type="button">Print / save as PDF</button>
+    </div>
+    <svg class="wave" viewBox="0 0 1200 60" preserveAspectRatio="none" aria-hidden="true">
+      <path d="M0 30 C150 0 300 60 450 30 S750 0 900 30 1050 60 1200 30 V60 H0Z"></path>
+    </svg>
+  </header>
+
+  <main class="wrap">
+    <section aria-labelledby="problem">
+      <h2 id="problem">Problem statement</h2>
+      <p>Rivers carry floating waste such as plastic bottles, bags and other debris. It harms aquatic life, blocks water flow and lowers water quality. Cleanup today is mostly manual: it is slow, costly, hard to run continuously and unsafe for workers in polluted or fast-moving water.</p>
+      <p><strong>Who it helps:</strong> municipal bodies, river-cleanup groups and the communities that depend on the river.</p>
+    </section>
+
+    <section aria-labelledby="solution">
+      <h2 id="solution">Our solution</h2>
+      <p>The robot moves across the water surface and collects floating waste into an onboard bin. This reduces human effort and risk, and allows cleaning to continue for longer and at lower cost.</p>
+    </section>
+
+    <section aria-labelledby="design">
+      <h2 id="design">Robot design</h2>
+      <p>The body and part layout were designed so that components fit, stay accessible and suit use on water.</p>
+      <figure class="shot">
+        <img src="assets/robot-design.png" alt="Robot design: body shape and placement of parts" id="design-img">
+        <div class="shot-empty" id="design-empty" hidden>
+          Add your robot design image at <code>assets/robot-design.png</code> and it will appear here.
+        </div>
+        <figcaption>Body shape and placement of parts.</figcaption>
+      </figure>
+    </section>
+
+    <section aria-labelledby="status">
+      <h2 id="status">Project status</h2>
+      <div class="table-scroll">
+        <table>
+          <caption class="sr-only">Status of each part of the project</caption>
+          <thead><tr><th scope="col">Part</th><th scope="col">Built by</th><th scope="col">Status</th></tr></thead>
+          <tbody id="status-body"></tbody>
+        </table>
+      </div>
+    </section>
+
+    <section aria-labelledby="team">
+      <h2 id="team">Team</h2>
+      <ul class="team" id="team-list"></ul>
+    </section>
+  </main>
+
+  <footer class="wrap foot">
+    <p>BCA Final Year · Department of Computer Applications, Alliance University</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
